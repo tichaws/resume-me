@@ -29,7 +29,11 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/index.js",
+              "src/assets/js/jquery.min.js",
+              "src/assets/js/jquery-3.3.1.slim.min.js"
+            ]
           },
           "configurations": {
             "production": {

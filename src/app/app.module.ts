@@ -3,16 +3,43 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { DetailComponent } from './component/detail/detail.component';
+import { AngularFireModule } from 'angularfire2'
+import { FormsModule } from '@angular/forms';
+import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/database';
+import { SavefileService } from './services/savefile.service';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { ApiPrefix } from './http/api-prefix.intorceptor';
+
+export const config ={
+  apiKey: "AIzaSyB6dMRmzlgbEUJtaALlrRtkBxouSQ3Dx7k",
+  authDomain: "portfolio-6987d.firebaseapp.com",
+  databaseURL: "https://portfolio-6987d.firebaseio.com",
+  projectId: "portfolio-6987d",
+  storageBucket: "portfolio-6987d.appspot.com",
+  messagingSenderId: "487737197889"
+}
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DetailComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    MatGridListModule,
+    AngularFireModule.initializeApp(config),
+    AngularFireDatabaseModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [SavefileService,AngularFireDatabase,{
+    provide: HTTP_INTERCEPTORS,
+    useClass: ApiPrefix,
+    multi: true,
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

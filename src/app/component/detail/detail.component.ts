@@ -3,6 +3,9 @@ import { AngularFireDatabase, AngularFireList, } from 'angularfire2/database';
 import { SavefileService } from 'src/app/services/savefile.service';
 import { Observable, Subject } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
+import { ModalOptions, BsModalRef, BsModalService } from 'ngx-bootstrap';
+import { MoreDetailComponent } from 'src/app/modal/more-detail/more-detail.component';
+import { Model } from 'src/app/model/model';
 
 @Component({
   selector: 'app-detail',
@@ -13,8 +16,9 @@ export class DetailComponent implements OnInit {
   items:any;
   sentSuccess = false
   sentfail = false
-
-  constructor(private db: AngularFireDatabase, private save: SavefileService) {
+  // modalRef: BsModalRef
+  
+  constructor(private db: AngularFireDatabase, private save: SavefileService,private modalService: BsModalService,private model:Model) {
   }
 
   contactForm = {
@@ -63,5 +67,18 @@ export class DetailComponent implements OnInit {
 
   saveResume() {
     this.save.dowloadFile()
+  }
+
+  moreDetail(id) {
+    let ngbModalOptions: ModalOptions = {
+      backdrop: true,
+      keyboard: false
+    };
+    const modalRef = this.modalService.show(MoreDetailComponent);
+    modalRef.content.project = this.model.project[id]
+    // this.modalRef.content.onReturnData.subscribe(result => {
+      
+    // })
+
   }
 }

@@ -11,6 +11,9 @@ import { AngularFireDatabaseModule, AngularFireDatabase } from 'angularfire2/dat
 import { SavefileService } from './services/savefile.service';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { ApiPrefix } from './http/api-prefix.intorceptor';
+import { MoreDetailComponent } from './modal/more-detail/more-detail.component';
+import { ModalModule } from 'ngx-bootstrap';
+import { Model } from './model/model';
 
 export const config ={
   apiKey: "AIzaSyB6dMRmzlgbEUJtaALlrRtkBxouSQ3Dx7k",
@@ -25,6 +28,7 @@ export const config ={
   declarations: [
     AppComponent,
     DetailComponent,
+    MoreDetailComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,13 +37,15 @@ export const config ={
     MatGridListModule,
     AngularFireModule.initializeApp(config),
     AngularFireDatabaseModule,
-    HttpClientModule
+    HttpClientModule,
+    ModalModule.forRoot(),
   ],
   providers: [SavefileService,AngularFireDatabase,{
     provide: HTTP_INTERCEPTORS,
     useClass: ApiPrefix,
     multi: true,
-  }],
+  },Model],
+  entryComponents:[MoreDetailComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

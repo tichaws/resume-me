@@ -164,7 +164,28 @@ hr {
   z-index: 2;
   padding: 0;
   margin: auto;
-  height: 40px;
+  height: 100px;
+  color: #fff;
+}
+
+.second-heading {
+  font-family: 'Open sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 5px;
+  // text-transform: uppercase;
+}
+
+.second-heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0;
+  margin: auto;
+  height: 10px;
   color: #fff;
 }
 
@@ -283,4 +304,22 @@ footer {
 
   .bt-img{
     padding-bottom: 15px;
+    cursor: pointer;
+    opacity: 0.5;
   }
+
+  .bt-img:hover{
+    opacity: 1;
+  }
+
+.task{
+  border: 1px #000;
+  background-color: coral;
+  color: #fff;
+  padding: 3px 15px;
+  margin: 3px
+}
+.task.green {
+  background-color: rgb(54, 177, 54);
+  color: #fff;
+}

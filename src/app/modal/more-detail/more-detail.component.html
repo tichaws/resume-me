@@ -1,0 +1,16 @@
+<div class="modal-header">
+  <h4 class="modal-title pull-left">{{project.name}}</h4>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="_bsModalRef.hide()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body" >
+  <img [src]="project.url" style="width: 568px">
+  <div style="margin-top: 10px">
+      {{project.desc}}
+  </div>
+</div>
+<div class="modal-footer">
+  <div>{{project.site}}</div>
+  <div>{{project.time}}</div>
+</div>

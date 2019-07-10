@@ -138,7 +138,22 @@
           <img class="center-block" src="../../../assets/img/product/booking-coin.png" alt="By laphatrada-wisadsri" />
         </div>
       </div>
-      
+
+      <div class="row">
+        <div class="col-md-4 bt-img">
+          <img class="center-block" src="../../../assets/img/product/travel-ktb.png" alt="By laphatrada-wisadsri" />
+        </div>
+
+        <div class="col-md-4 bt-img">
+          <img class="center-block" src="../../../assets/img/product/eCourt.png" alt="By laphatrada-wisadsri" />
+        </div>
+
+        <div class="col-md-4 bt-img">
+          <img class="center-block" src="../../../assets/img/product/eFiling.png" alt="By laphatrada-wisadsri" />
+        </div>
+
+
+      </div>
     </div>
   </section>
 
@@ -168,35 +183,37 @@
       <div class="row">
         <div class="col-sm-4 col-sm-offset-4">
           <div *ngIf="sentSuccess" class="alert alert-success" role="alert">
-           Sent email success !
+            Sent email success !
           </div>
           <div *ngIf="sentfail" class="alert alert-danger" role="alert">
-           Cannot sent email , Please try again.
+            Cannot sent email , Please try again.
           </div>
           <form class="center-block" action="#" method="post">
             <div class="form-group">
               <label class="sr-only" for="inputName">Full name</label>
 
-              <input id="inputName" class="form-control" [(ngModel)]="contactForm.name" [ngModelOptions]="{standalone: true}"
-                type="text" placeholder="Full name" required />
+              <input id="inputName" class="form-control" [(ngModel)]="contactForm.name"
+                [ngModelOptions]="{standalone: true}" type="text" placeholder="Full name" required />
             </div>
 
             <div class="form-group">
               <label for="inputMail" class="sr-only">Email Address</label>
 
-              <input id="inputMail" class="form-control" type="email" [(ngModel)]="contactForm.email" [ngModelOptions]="{standalone: true}"
-                placeholder="Email Address" required />
+              <input id="inputMail" class="form-control" type="email" [(ngModel)]="contactForm.email"
+                [ngModelOptions]="{standalone: true}" placeholder="Email Address" required />
             </div>
 
             <div class="form-group">
               <label for="inputMessage" class="sr-only">Your Message</label>
 
-              <textarea id="inputMessage" class="form-control" [(ngModel)]="contactForm.text" [ngModelOptions]="{standalone: true}"
-                name="message" placeholder="Your Message" cols="30" rows="8" required></textarea>
+              <textarea id="inputMessage" class="form-control" [(ngModel)]="contactForm.text"
+                [ngModelOptions]="{standalone: true}" name="message" placeholder="Your Message" cols="30" rows="8"
+                required></textarea>
             </div>
 
             <div class="form-group">
-              <button class="btn btn-default center-block" type="submit" value="Hire me" (click)="contact()">Contact me</button>
+              <button class="btn btn-default center-block" type="submit" value="Hire me" (click)="contact()">Contact
+                me</button>
             </div>
           </form>
         </div>
@@ -212,7 +229,8 @@
         </li>
 
         <li>
-          <a href="https://th.linkedin.com/in/laphatrada-wisadsri-423896151/en" class="fa fa-linkedin" target="_blank"></a>
+          <a href="https://th.linkedin.com/in/laphatrada-wisadsri-423896151/en" class="fa fa-linkedin"
+            target="_blank"></a>
         </li>
 
         <li>

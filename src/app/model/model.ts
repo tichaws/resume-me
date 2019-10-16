@@ -53,13 +53,31 @@ export class Model {
         this.project[7].site = 'KRUNGTHAI BANK (KTB)'
         this.project[7].name = 'EFILING'
         this.project[7].desc = 'Electronic complaint filing system Payment of various fees Is used via internet banking On the branch counters and ATMs of Krung Thai Bank For lawyers'
-        this.project[7].time = 'MAR 2018 – Present'
+        this.project[7].time = 'MAR 2018 – JULY 2018'
         this.project[7].url = '../../../assets/img/product/eFiling.png'
         this.project.push(new Project())
         this.project[8].site = 'KRUNGTHAI BANK (KTB)'
         this.project[8].name = 'ECOURT'
         this.project[8].desc = 'Filing submission of pleadings and documents by electronic media For officers and judges '
-        this.project[8].time = 'MAR 2018 – Present'
+        this.project[8].time = 'MAR 2018 – JULY 2018'
         this.project[8].url = '../../../assets/img/product/eCourt.png'
+        this.project.push(new Project())
+        this.project[9].site = 'TISCO BANK (TISCO)'
+        this.project[9].name = 'ZERO CANZER PLAN'
+        this.project[9].desc = 'Insurance form provides for use comprehensive details what is usually contained in an Insurance Policy.'
+        this.project[9].time = 'JULY 2018 – JULY 2018'
+        this.project[9].url = '../../../assets/img/product/zeroCanzer.png'
+        this.project.push(new Project())
+        this.project[10].site = 'FREELANCE'
+        this.project[10].name = 'GREEN SPOT'
+        this.project[10].desc = 'Green spot company website is so much more than just a comprehensive internship search engine. This site allows you to search for opportunities by major, job category, preferred resources as well.'
+        this.project[10].time = 'OCTOBER 2018 – OCTOBER 2018'
+        this.project[10].url = '../../../assets/img/product/greenSpot.png'
+        this.project.push(new Project())
+        this.project[11].site = 'TISCO BANK (TISCO)'
+        this.project[11].name = 'CHATBOT PLATFORM'
+        this.project[11].desc = 'Chatbot applications streamline interactions between people and services, enhancing customer experience. At the same time, they offer companies new opportunities to improve the customers engagement process and operational efficiency by reducing the typical cost of customer service.'
+        this.project[11].time = 'AUGUST 2018 – Present'
+        this.project[11].url = '../../../assets/img/product/chatbot.png'
     }
 }

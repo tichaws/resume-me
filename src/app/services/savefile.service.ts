@@ -16,7 +16,7 @@ export class SavefileService {
 
   dowloadFile() {
     this.http
-        .get<any>("/assets/pdf/resume-laphatrada.pdf", { responseType: 'blob' as 'json' })
+        .get<any>("/assets/pdf/LAPHAT-RADA's-Resume.pdf", { responseType: 'blob' as 'json' })
         .subscribe(data => {
           FileSaver.saveAs(data,'laphatrada-resume');
         });

@@ -77,7 +77,31 @@ export class Model {
         this.project[11].site = 'TISCO BANK (TISCO)'
         this.project[11].name = 'CHATBOT PLATFORM'
         this.project[11].desc = 'Chatbot applications streamline interactions between people and services, enhancing customer experience. At the same time, they offer companies new opportunities to improve the customers engagement process and operational efficiency by reducing the typical cost of customer service.'
-        this.project[11].time = 'AUGUST 2018 – Present'
-        this.project[11].url = '../../../assets/img/product/chatbot.png'
+        this.project[11].time = 'AUGUST 2018 – JANURY 2020'
+        this.project[11].url = '../../../assets/img/product/placeholder-img.png'
+        this.project.push(new Project())
+        this.project[12].site = 'FREELANCE'
+        this.project[12].name = 'THAI NAMTHIP'
+        this.project[12].desc = 'Coca Cola <a target="_blank" href="http://www.thainamthip.co.th/customer/fooddelivery/pages/main"> http://www.thainamthip.co.th/customer/fooddelivery/pages/main </a>'
+        this.project[12].time = 'OCTOBER 2019 - OCTOBER 2019 '
+        this.project[12].url = '../../../assets/img/product/thainamtip.png'
+        this.project.push(new Project())
+        this.project[13].site = 'TISCO BANK (TISCO)'
+        this.project[13].name = 'COMPOSER ENGINE'
+        this.project[13].desc = 'Composer is an application developed for users to create Microservice-based systems (MBS) by selecting a data structure Assembled with a template and a predetermined widget, users can review and adjust their usage. Once satisfied, they are stored on the EC2 by setting the MBS operating sequence, and the Composer also determines the access and usage rights of each MBS.'
+        this.project[13].time = 'FEBRUARY 2020 - Present'
+        this.project[13].url = '../../../assets/img/product/placeholder-img.png'
+        this.project.push(new Project())
+        this.project[14].site = 'TISCO BANK (TISCO)'
+        this.project[14].name = 'LAUNCHER ENGINE'
+        this.project[14].desc = 'Application showing the operation of MBS which is both Service and Standard Process by configuring and generating from Composer Application.'
+        this.project[14].time = 'FEBRUARY 2020 - Present'
+        this.project[14].url = '../../../assets/img/product/placeholder-img.png'
+        this.project.push(new Project())
+        this.project[15].site = 'TISCO BANK (TISCO)'
+        this.project[15].name = 'IT-CATALOG'
+        this.project[15].desc = 'IT Catalog is an application used to collect Application IT within the Tisco organization. Each application has detailed information. Example screenshot Developer information Released version and can also allow users to rate and write comments on the Application. There is also a useful Article for studying information.'
+        this.project[15].time = 'MARCH 2021 - Present'
+        this.project[15].url = '../../../assets/img/product/placeholder-img.png'
     }
 }

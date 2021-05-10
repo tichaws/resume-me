@@ -12,7 +12,7 @@ export class AppComponent implements OnInit{
 
   }
 
-  title = 'resume-me';
+  title = 'I\'m laphat-rada';
 
   ngOnInit(): void {
     this.model.setProject()

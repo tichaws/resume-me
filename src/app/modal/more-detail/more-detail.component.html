@@ -6,8 +6,8 @@
 </div>
 <div class="modal-body" >
   <img [src]="project.url" style="width: 100%">
-  <div style="margin-top: 10px">
-      {{project.desc}}
+  <div style="margin-top: 10px" [innerHTML]="project.desc">
+      <!-- {{project.desc}} -->
   </div>
 </div>
 <div class="modal-footer">

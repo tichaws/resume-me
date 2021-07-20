@@ -44,8 +44,8 @@ export class Model {
         this.project[5].time = 'FEB 2018 – MAR 2018'
         this.project[5].url = '../../../assets/img/product/booking-coin.png'
         this.project.push(new Project())
-        this.project[6].site = 'SECONDARY CITIES'
-        this.project[6].name = 'EFILING'
+        this.project[6].site = 'KRUNGTHAI BANK (KTB)'
+        this.project[6].name = 'SECONDARY CITIES'
         this.project[6].desc = 'Government measures to promote tourism in minor cities and stimulate the economy. In which money will be distributed to people aged 18 years and over; 1,500 baht each, to spend in 55 minor cities to buy products and services via e-Payment methods.'
         this.project[6].time = 'MAR 2018 – MAR 2018'
         this.project[6].url = '../../../assets/img/product/travel-ktb.png'
@@ -104,4 +104,28 @@ export class Model {
         this.project[15].time = 'MARCH 2021 - Present'
         this.project[15].url = '../../../assets/img/product/placeholder-img.png'
     }
-}
+
+    projects = [
+        {
+            site : 'ADVANCED INFO SERVICE (AIS)',
+            name : 'EBUSINESS PORTAL',
+            desc : 'AIS eBusiness Portal Service or Computer System designed for the convenience of Subscriber to perform electronic transactions in connection with the use of Mobile Phone Service including any related services such as to check the promotion package, to register-change-cancel the use of Mobile Phone Service to inform the desire to purchase the Goods/Service, to browse the usage detail record of the Mobile Phone Service etc.',
+            time : 'JUNE 2017 – AUG 2017 , NOV 2017 – SEP 2018',
+            url  : '../../../assets/img/product/ebiz.png'
+        },
+        {
+            site : 'KRUNGTHAI BANK (KTB)',
+            name : 'CASH MENAGEMENT ADMIN PORTAL',
+            desc : 'Migration  KTB	Cash Management	Admin Portal Website. The project also aims to improve and enhance the system	using new Java technology and framework.',
+            time : 'SEP	2017 – OCT 2017',
+            url  : '../../../assets/img/product/portaladmin.png'
+        },
+        {
+            site : 'ADVANCED INFO SERVICE (AIS)',
+            name : 'ALLOWANCE SYSTEM',
+            desc : 'AIS Allowance System is AIS Internal Website for employee to show reports provide data to determine daily allowances for employee. The report contain information on actual overtime. The details about when overtime applies are different under each condition and agreement. To find out when overtime applies in your see When overtime applies.',
+            time : 'MAY 2018 – SEP	2018',
+            url  : '../../../assets/img/product/allw.jpg'
+        } 
+    ] 
+} 

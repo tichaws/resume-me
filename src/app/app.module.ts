@@ -17,6 +17,7 @@ import { ModalModule } from 'ngx-bootstrap';
 import { Model } from './model/model';
 import { HomeComponent } from './component/home/home.component';
 import { CardComponent } from './component/card/card.component';
+import { InterviewComponent } from './interview/interview.component';
 
 export const config ={
   apiKey: "AIzaSyB6dMRmzlgbEUJtaALlrRtkBxouSQ3Dx7k",
@@ -34,6 +35,7 @@ export const config ={
     MoreDetailComponent,
     HomeComponent,
     CardComponent,
+    InterviewComponent,
   ],
   imports: [
     BrowserModule,

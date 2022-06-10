@@ -17,6 +17,7 @@ import { ModalModule } from 'ngx-bootstrap';
 import { Model } from './model/model';
 import { HomeComponent } from './component/home/home.component';
 import { CardComponent } from './component/card/card.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler/src/core';
 
 export const config ={
   apiKey: "AIzaSyB6dMRmzlgbEUJtaALlrRtkBxouSQ3Dx7k",
@@ -52,6 +53,6 @@ export const config ={
     multi: true,
   },Model],
   entryComponents:[MoreDetailComponent],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

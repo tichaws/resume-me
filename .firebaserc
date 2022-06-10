@@ -1,7 +1,6 @@
 {
   "projects": {
-    "default": "portfolio-6987d",
-    "prod": "laphat-rada"
+    "default": "laphat-rada",
   },
   "targets": {}
 }

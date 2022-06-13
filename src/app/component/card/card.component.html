@@ -5,10 +5,11 @@
       <div class="col-md-12">
         <h2>Project</h2>
         <h3 class="caption gray">I have worked on many important projects throughout my career</h3>
+        <button (click)="btnShuffle()"> shuffle</button>
       </div>
       <div class="container">
         <div class="row">
-          <div *ngFor="let element of models.project; let i = index">
+          <div *ngFor="let element of projects; let i = index">
             <div class="col-md-4">
               <div class="team-member">
                 <figure>
